@@ -23,7 +23,7 @@ import Link from "next/link";
           accomplish it all with <strong>Samanvay</strong>
         </div>
         <Button className="mt-6" asChild>
-          <Link href="/signup">Get Samanvay for free</Link>
+          <Link href="/sign-up">Get Samanvay for free</Link>
         </Button>
       </div>
     );
