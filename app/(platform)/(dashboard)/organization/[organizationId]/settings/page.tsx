@@ -3,24 +3,25 @@ import React from 'react'
 
 function Settings() {
   return (
-    <div className='w-full'>
-        <OrganizationProfile
+    <div className="w-full">
+      <OrganizationProfile
+        routing="hash"
         appearance={{
-            elements:{
-                rootBox:{
-                    boxShadow:"none",
-                    width:"100%"
-                },
-                card:{
-                    border:"1px solid #e5e5e5",
-                    width:"100%",
-                    boxShadow:"none"
-                }
-            }
+          elements: {
+            rootBox: {
+              boxShadow: "none",
+              width: "100%",
+            },
+            card: {
+              border: "1px solid #e5e5e5",
+              width: "100%",
+              boxShadow: "none",
+            },
+          },
         }}
-        />
+      />
     </div>
-  )
+  );
 }
 
 export default Settings
