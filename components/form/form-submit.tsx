@@ -9,7 +9,7 @@ interface FormSubmitProps{
     children:React.ReactNode;
     disabled?:boolean;
     className?:string;
-    variant?:"default" | "desctructive" | "ghost" | "outline" | "secondary" | "link" | "primary";
+    variant?:"default" | "destructive" | "ghost" | "outline" | "secondary" | "link" | "primary";
 };
 
 export const FormSubmit=({
