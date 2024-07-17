@@ -3,7 +3,7 @@ import { auth } from "@clerk/nextjs/server";
 import { notFound, redirect } from "next/navigation";
 import BoardNavbar from "./_components/board-navbar";
 
-export async function generateMetaData({
+export async function generateMetadata({
   params,
 }: {
   params: { boardId: string };
@@ -50,13 +50,14 @@ const BoardIdLayout = async ({
   if (!board) {
     notFound();
   }
+
   return (
     <div
       className="relative h-full bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: `url(${board.imageFullUrl})` }}
     >
-        <BoardNavbar data={board}/>
-        <div className="absolute bg-black/10 inset-0"/>
+      <BoardNavbar data={board} />
+      <div className="absolute bg-black/10 inset-0" />
       <main className="relative pt-24 h-full">{children}</main>
     </div>
   );
